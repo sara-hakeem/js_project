@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="stylesheet" href="home2.css">
+
+    
+        <style type="text/css">
+             #header  li{display:inline;padding:15px  }
+           #header li:hover{background-color:#92B4EC;height: 50px;} 
+           #header {width: 100%;background-color:#FFE69A;color: white;overflow:auto;position:fixed;}
+ a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+    body
+    {
+	    margin:0px;
+	    background-color:#ddd4d0;
+	    color:#0b0c0a;
+	    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #main{width:600px; height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+    border-radius:5px; padding-left:10px; margin-top:100px; border-top:3px double #f1f1f1; 
+    border-bottom:3px double #0a0909; padding-top:20px;
+    }
+    
+    #main table{font-family:"Comic Sans MS", cursive;}
+    /* css code for textbox */
+    #main .tb{height:28px; width:230px; border:1px solid #f26724; color:#fd7838; font-weight:bold; border-left:5px solid #f7f7f7; opacity:0.9;}
+    
+    #main .tb:focus{height:28px; border:1px solid #f26724; outline:none; border-left:5px solid #f7f7f7;}
+
+    /* css code for button*/
+    #main .btn{width:150px; height:32px; outline:none;  color:#f7f7f7; font-weight:bold; border:0px solid #f26724; 
+    text-shadow: 0px 0.5px 0.5px rgb(27, 23, 23); border-radius: 2px; font-weight: 600; color: #f26724; letter-spacing: 1px; 
+    font-size:14px; background-color:#030303; -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;}
+  
+    #main .btn:hover{background-color:#f26724; outline:none;  border-radius: 2px; color:#f1f1f1; border:1px  #f1f1f1;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+	
+        
+        </style>
+        
+<title>Welcome To Registration Form</title>
+
+</head>
+
+  <body>
+   <div class="header">
+    <div class="container">
+      <div class="navbar">
+   <div class="logo">
+       <img src="Images/logo.png" width="125px"/>
+
+
+   </div>       
+   <nav> 
+            <ul id="MenuItem">
+
+               <li class="li"><a href="home2.html" >Home</a></li>
+               <li class="li"><a href="products.html">Products</a></li>
+               <li class="li"><a href="AboutUs.html" >About</a></li>
+               <li class="li"><a href="login.html" >Login</a></li>
+               <li class="li"><a href="login.html" >Log out</a></li>
+           
+               </ul>
+           </nav>         
+           <a href="Cart.html"><img src="Images/cart.png" alt="cart" width="30px" height="30px"/></a>
+           <img src="Images/menu.png" class="menu-icon" onclick="menuetoggle()" />
+
+       </div>
+
+
+   <br>
+   <br>
+  <!-- Main div code -->
+  <div id="main">
+  <div class="h-tag">
+  <h2>Create Your Account</h2>
+  </div>
+  <!-- create account div -->
+  <!--<form class="Register" action="login.html">-->
+  <table cellspacing="2" align="center" cellpadding="8" border="0">
+  <tr>
+  <td align="right">Enter Name :</td>
+  <td><input type="text" required  placeholder="Enter user here"  id="t1" class="tb" onchange="validatefname()" /></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Email ID :</td>
+  <td><input type="text" placeholder="Enter Email  here" id="t2" class="tb" required onchange="validateEmail()"/></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Username :</td>
+  <td><input type="text" placeholder="Enter Username here" id="t3" class="tb" required onchange="validateUserName()"/></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Password :</td>
+  <td><input type="password" placeholder="Enter Password here" id="t4" class="tb" required/></td>
+  </tr>
+  <tr>
+  <td align="right">Enter Confirm Password :</td>
+  <td><input type="password" placeholder="Enter Password here" id="t5" class="tb" required onchange="validatePassword();"/></td>
+  </tr>
+  <tr>
+  <td></td>
+  <td>
+  <input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn" />
+  <input type="submit" value="Create Account"  onclick="IsertIntoLocalStorage()" class="btn"/><br><span id='message'></span></td>
+  </tr>
+  
+  </table>
+</form>
+</div>
+</div>
+
+   
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android or Ios mobile phone.</p>
+              <div class="app-logo">
+                  <img src="Images/app-store.png"/>
+                  <img src="Images/play-store.png"/>
+
+              </div>
+          </div>
+          <div class="footer-col-2">
+              <img src="Images/logo-white.png"/>
+              <p>Our Purpose Is To Sustability Make Plesure and benifits To Sports Accessible To The Many. </p>
+
+          </div>
+          <div class="footer-col-3">
+              <h1>Useful Links</h1>   
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+
+              </ul>
+          </div> 
+
+          
+          <div class="footer-col-4">
+              <h1>Follow us</h1>   
+              <ul>
+                  <li>FaceBook</li>
+                  <li>Twitter</li>
+                  <li>Instagram </li>
+                  <li>YouTube</li>
+
+              </ul>
+          </div>
+              
+          </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - Ataaullah Mohamed</p>
+      </div>
+
+
+
+
+  
+  <script>
+
+    function IsertIntoLocalStorage()
+    {
+        var x = localStorage.getItem("account");
+        x=JSON.parse(x);
+       
+
+        var name= document.getElementById("t1").value;
+        var email= document.getElementById("t2").value;  
+        var uname= document.getElementById("t3").value;
+        var pwd= document.getElementById("t4").value;	
+
+       // var Register_array = new Array();
+     
+       let _obj=
+       {
+          "Name":name,
+          "Email":email,
+          "UserName":uname,
+          "Password":pwd
+        }
+       
+       if(x==null)
+       {
+           x=new Array();
+          
+       }
+         var check=0;
+        for(y in x)
+        {
+            if(x[y].UserName==uname&&x[y].Password==pwd)
+            {
+                check++;
+              alert("its already exist");
+            }
+            
+        }
+        if(check==0)
+        {   
+          x.push(_obj);
+          alert("data saved");
+         window.open("login.html","_self");
+        }
+     
+
+  
+            localStorage.setItem("account",JSON.stringify(x));
+            
+    
+    }   
+
+	
+        function validateUserName()
+        {
+            var uname= document.getElementById("t3").value;
+        var patt="[a-zA-Z_-]{4,}";
+        if(!(uname.match(patt)))
+       {
+       
+        document.getElementById('message').innerHTML="invalid name";   
+        document.getElementById('message').style.backgroundColor="red";
+        event.preventDefault();
+        
+       }
+    }
+
+        
+function validateEmail()
+{
+    var email= document.getElementById("t2").value;  
+    
+    reg=/^([a-zA-Z0-9_\.-]+)@([a-zA-Z0-9_\.-]+)\.([a-zA-Z\.]{2,6})$/
+       if(!(reg.test(email)))
+      {
+      
+      // document.getElementById('message').innerHTML="invalid email"; 
+      alert(" invalid email  email must be like fromat  aaa@domail.aaaa");  
+       document.getElementById('message').style.backgroundColor="red";
+       event.preventDefault();
+       
+      }
+}
+        function validatefname()
+    {
+        var name= document.getElementById("t1").value;
+       
+        var patt="[a-zA-Z_-]{4,}";
+        if(!(name.match(patt)))
+       {
+       
+        //document.getElementById('message').innerHTML="invalid name"; 
+        alert(" invalid name : must be 4 or more Letter");  
+        document.getElementById('message').style.backgroundColor="red";
+        event.preventDefault();
+        
+       }
+    }
+        
+function validatePassword()
+    {  
+        var pwd= document.getElementById("t4").value;			
+		var cpwd= document.getElementById("t5").value;
+       
+        if( pwd != cpwd )
+        {
+            
+           // document.getElementById('message').innerHTML="not match password";
+           alert("password not match");
+             event.preventDefault();
+        }    
+    }
+     
+	function clearFunc()
+	{
+		document.getElementById("t1").value="";
+		document.getElementById("t2").value="";
+		document.getElementById("t3").value="";
+		document.getElementById("t4").value="";
+		document.getElementById("t5").value="";
+	}
+  </script>
+ 
+
+
+
+
+
+
+</body>
+  </html>

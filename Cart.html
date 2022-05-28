@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="home2.css">
+
+
+
+  <style type="text/css">
+    #header li {
+      display: inline;
+      padding: 15px
+    }
+
+    #header li:hover {
+      background-color: #92B4EC;
+      height: 50px;
+    }
+
+    #header {
+      width: 100%;
+      background-color: #FFE69A;
+      color: white;
+      overflow: auto;
+      position: fixed;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin: 10px;
+      text-align: center;
+      font-family: arial;
+      display: inline-block;
+
+    }
+
+    .card img{
+      width: 100%;
+    }
+
+    #products {
+      width: 65%;
+      margin: auto;
+    }
+
+    .price {
+      color: grey;
+      font-size: 22px;
+    }
+
+  
+  
+    #totalprice {
+      font-size: 18pX;
+      font-weight: bold;
+      border: 1px solid rgb(112, 112, 112);
+      border-radius: 10px;
+      width: 170px;
+      padding: 10px;
+      margin: 10px;
+    }
+
+   
+  </style>
+</head>
+
+<body>
+  
+  <div class="container">
+    <div class="navbar">
+ <div class="logo">
+     <img src="Images/logo.png" width="125px"/>
+
+
+ </div>       
+ <nav> 
+          <ul id="MenuItem">
+
+             <li class="li"><a href="home2.html" >Home</a></li>
+             <li class="li"><a href="products.html">Products</a></li>
+             <li class="li"><a href="AboutUs.html" >About</a></li>
+             <li class="li"><a href="login.html" >Login</a></li>
+             <li class="li"><a href="login.html" >Log out</a></li>
+         
+             </ul>
+         </nav>         
+         <a href="Cart.html"><img src="Images/cart.png" alt="cart" width="30px" height="30px"/></a>
+         <img src="Images/menu.png" class="menu-icon" onclick="menuetoggle()" />
+
+     </div>
+  <br>
+  <br>
+  <br>
+  <div id="products">
+
+  </div>
+  <div id="totalprice"></div>
+  <div>
+    <button class="btn" onclick="btnBuy()">Buy</button>
+    <p style="font-size: 25px ; font-weight: bolder; color: #ff523b;" id="p"></p>
+  </div>
+  </div>
+
+  <script src="cart.js"></script>
+  <br>
+  <br>
+
+<hr>
+<br>
+
+  
+<div class="footer">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col-1">
+              <h3>Download Our App</h3>
+              <p>Download App for Android or Ios mobile phone.</p>
+              <div class="app-logo">
+                  <img src="Images/app-store.png"/>
+                  <img src="Images/play-store.png"/>
+
+              </div>
+          </div>
+          <div class="footer-col-2">
+              <img src="Images/logo-white.png"/>
+              <p>Our Purpose Is To Sustability Make Plesure and benifits To Sports Accessible To The Many. </p>
+
+          </div>
+          <div class="footer-col-3">
+              <h1>Useful Links</h1>   
+              <ul>
+                  <li>Coupons</li>
+                  <li>Blog Post</li>
+                  <li>Return Policy</li>
+                  <li>Join Affiliate</li>
+
+              </ul>
+          </div> 
+
+          
+          <div class="footer-col-4">
+              <h1>Follow us</h1>   
+              <ul>
+                  <li>FaceBook</li>
+                  <li>Twitter</li>
+                  <li>Instagram </li>
+                  <li>YouTube</li>
+
+              </ul>
+          </div>
+              
+          </div>
+      <hr>
+      <p class="copyright">Copyright 2022 - Ataaullah Mohamed</p>
+      </div>
+   
+<script>
+  function btnBuy(){
+  document.getElementById("p").textContent="Done Buy We Will Mail You Now Thank  For Your Trust.";
+
+  }
+</script>
+
+</body>
+
+</html>
